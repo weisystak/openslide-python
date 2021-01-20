@@ -57,7 +57,7 @@ elif platform.system() == 'Darwin':
                     "Is OpenSlide installed?")
         _lib = cdll.LoadLibrary(_lib)
 else:
-    _lib = cdll.LoadLibrary('libopenslide.so.0')
+    _lib = cdll.LoadLibrary('/usr/local/lib/libopenslide.so.0')
 
 class OpenSlideError(Exception):
     """An error produced by the OpenSlide library.
